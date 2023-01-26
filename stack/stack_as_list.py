@@ -13,6 +13,14 @@ class MyStack:
     def peek(self, index):
         return self.array[index]
 
+    def empty(self):
+        if len(self.array) == 0:
+            return True
+        return False
+
+    def size(self):
+        return len(self.array)
+
     def __str__(self):
         return str(self.array)
 
